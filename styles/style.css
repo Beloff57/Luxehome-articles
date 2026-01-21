@@ -167,14 +167,14 @@ body {
     background-color: #3E3E3E;
     top: -1.25vw;
     bottom: -3vw;
-    left: calc(0vw + 48%);
+    left: calc(0vw + 47.5%);
     margin-left: -0.5px;
 }
 
 .ac-vertical-line-s1 {
     position: absolute;
     top: -1.3vw;
-    left: 48%;
+    left: 47.5%;
     transform: translateX(-50%);
     width: 1px;
     height: 0%;
@@ -188,14 +188,14 @@ body {
     background-color: #3E3E3E;
     top: -1.25vw;
     bottom: 0vw;
-    left: calc(0vw + 48%);
+    left: calc(0vw + 47.5%);
     margin-left: -0.5px;
 }
 
 .ac-vertical-line-s2 {
     position: absolute;
     top: -1.3vw;
-    left: 48%;
+    left: 47.5%;
     transform: translateX(-50%);
     width: 1px;
     height: 0%;
@@ -301,7 +301,7 @@ body {
     display: flex;
     height: 100%;
     gap: 3vw;
-    margin-top: 1.25vw;
+    margin-top: 1.5vw;
 }
 
 .article-st2 {
@@ -339,8 +339,8 @@ body {
 }
 
 .ac-st2 {
-  width: 41.5vw;
-  height: 26.44vw;
+  width: 43.5vw;
+  height: 28.44vw;
 }
 
 
@@ -361,7 +361,7 @@ body {
   .articles-zag {
     position: relative;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     gap: 0;
     margin-bottom: 6.82vw;
@@ -379,8 +379,9 @@ body {
   }
 
   .articles-zag h1 {
-    font-size: 8.2vw;
+    font-size: 5.45vw;
     padding-left: 5vw;
+    font-weight: 500;
   }
 
   .art-kol {
@@ -392,18 +393,16 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 2vw;
-
     background: transparent;
     border: none;
     padding: 0;
-
     font-family: var(--montserrat);
-    font-size: 3.6vw;
+    font-size: 3.18vw;
     font-weight: 400;
     letter-spacing: -0.02em;
     color: #717171;
-
     cursor: pointer;
+    padding-bottom: 0.8vw;
   }
 
   .articles-sort-btn::after {
@@ -422,17 +421,14 @@ body {
 
   .art-nav {
     display: flex;
-    flex-wrap: nowrap;              /* ❗ одна строка */
-    overflow-x: auto;               /* ❗ горизонтальный скролл */
+    flex-wrap: nowrap;              
+    overflow-x: auto;               
     overflow-y: hidden;
     gap: 5vw;
-
     padding-bottom: 2vw;
-    margin-bottom: 6vw;
-
-    font-size: 3.4vw;
-
-    -webkit-overflow-scrolling: touch; /* плавный свайп iOS */
+    margin-bottom: 5.09vw;
+    font-size: 3.64vw;
+    -webkit-overflow-scrolling: touch; 
     scroll-behavior: smooth;
   }
 
@@ -488,8 +484,8 @@ body {
   .article-content {
     flex-direction: column;
     height: auto;
-    gap: 5vw;
-    margin-top: 5vw;
+    gap: 4.55vw;
+    margin-top: 4.55vw;
   }
 
   .article-st1 {
@@ -497,7 +493,7 @@ body {
     align-items: center;
     gap: 4vw;
     position: relative;
-    padding-bottom: 5vw;
+    padding-bottom: 4.55vw;
     padding-left: 5vw;
         padding-right: 5vw;
   }
@@ -522,6 +518,17 @@ body {
     padding-left: 5vw;
   }
 
+  .teg-article2 {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.teg-article2 p {
+    font-size: 2.73vw;
+        color: #595959;
+        margin: 0;
+}
+
   .article-st2 .article-text {
     display: contents;
   }
@@ -531,7 +538,7 @@ body {
   /* 1. мета */
   .article-st2 .article-meta {
     order: 1;
-    margin-bottom: 3vw;
+    margin-bottom: 2.95vw;
   }
 
   /* 2. картинка */
@@ -544,7 +551,7 @@ body {
     order: 3;
     font-size: 3.64vw;
     width: 91%;
-    margin: 3vw 0;
+    margin: 4.09vw 0;
   }
 
   /* 4. описание */
@@ -557,9 +564,10 @@ body {
 
   /* картинка */
   .article-st2 .ac-st2 {
-    width: 87.73vw;
-    height: auto;
-    display: block;
+    width: 89.73vw;
+        height: 42.27vw;
+        display: block;
+        object-fit: cover;
   }
 
   .article-st2::after {
@@ -590,28 +598,53 @@ body {
 
   .article-text {
     width: 100%;
+    gap: 2vw;
   }
 
   .article-meta {
-    gap: 3vw;
+    gap: 5vw;
     margin-bottom: 2vw;
   }
 
   .teg-article {
     width: 8.3vw;
-    font-size: 2.73vw;
-    padding: 1.1vw 3vw;
+    font-size: 2.6vw;
+    padding: 0.91vw 2.4vw;
     border-radius: 6vw;
+    line-height: 114.2%;
   }
 
   .article-meta-info {
     font-size: 2.73vw;
   }
 
+  .views-icon,
+.views-icon-2 {
+    width: 2.1vw;
+    height: 2vw;
+    padding-right: 0.81vw;
+}
+
+.article-views {
+  display: flex;
+  align-items: center;
+  gap: 0.35vw;
+  padding-right: 2.82vw;
+}
+
+.article-views-2 {
+    color: #595959;
+  display: flex;
+  align-items: center;
+  gap: 0.35vw;
+  padding-right: 2.82vw;
+}
+
   .article-zag {
     font-size: 3.64vw;
     width: 100%;
     margin: 0 0 2.5vw;
+    font-weight: 600;
   }
 
   .article-opis {
@@ -622,7 +655,7 @@ body {
 
   .ac-st1 {
     width: 34.55vw;
-    height: 34.55vw;
+    height: 35vw;
     object-fit: cover;
   }
 
@@ -632,12 +665,12 @@ body {
 
   .article-content-2 {
     flex-direction: column;
-    margin-top: 8vw;
+    margin-top: 6.59vw;
   }
 
   .article-st2 {
     flex-direction: column;
-    gap: 4.5vw;
+    gap: 0;
   }
 
   .article-zag-2 {
