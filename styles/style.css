@@ -226,6 +226,8 @@ body {
     margin-bottom: 7.9vw;
     font-size: 1.5vw;
     width: 19vw;
+    letter-spacing: -0.02em;
+    line-height: 114.2%;
 }
 
 .article-opis {
@@ -344,10 +346,23 @@ body {
 }
 
 
+.mi-b-2 {
+  display: none;
+}
+
+
 /* ==================================
    MOBILE — Articles (exact layout)
    ================================== */
 @media (max-width: 440px) {
+
+  .mi-b-2 {
+    display: block;
+  }
+
+  .mi-b {
+    display: none;
+  }
 
   body {
     margin-left: 0;
@@ -598,7 +613,7 @@ body {
 
   .article-text {
     width: 100%;
-    gap: 2vw;
+    gap: 3vw;
   }
 
   .article-meta {
@@ -607,11 +622,13 @@ body {
   }
 
   .teg-article {
-    width: 8.3vw;
-    font-size: 2.6vw;
-    padding: 0.91vw 2.4vw;
-    border-radius: 6vw;
-    line-height: 114.2%;
+    display: flex;
+        justify-content: center;
+        width: 8.3vw;
+        font-size: 2.5vw;
+        padding: 0.97vw 1.54vw;
+        border-radius: 6vw;
+        line-height: 114.2%;
   }
 
   .article-meta-info {
@@ -620,8 +637,8 @@ body {
 
   .views-icon,
 .views-icon-2 {
-    width: 2.1vw;
-    height: 2vw;
+    width: 2.05vw;
+    height: 1.59vw;
     padding-right: 0.81vw;
 }
 
